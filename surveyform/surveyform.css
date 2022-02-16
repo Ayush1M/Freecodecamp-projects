@@ -1,0 +1,140 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: white;
+    margin: 0;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    background: url("surveyform.jpg");
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    margin: 3rem auto 0 auto;
+}
+
+@media(min-width: 550px){
+    .container{
+        max-width: 520px;
+    }
+}
+
+@media(min-width: 750px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+.header{
+    padding: 1rem;
+    margin: 2rem;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+h1 p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+form{
+    background: rgba(27, 27, 50, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+input,
+button,
+select,
+textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button{
+    border: none;
+}
+
+.description{
+    font-style: italic;
+    font-weight: 200;
+}
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: .25rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    height: 2.375rem;
+    padding: 0.45rem 0.55rem;
+}
+
+.form-control:focus{
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+}
+
+.input-radio,
+.input-checkbox{
+    display: inline-block;
+    margin-right: 0.5rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+.input-textarea{
+    min-height: 110px;
+    width: 100%;
+    resize: vertical;
+    padding: .5rem;
+}
+
+.submit-button{
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    background-color: rgb(110, 224, 110);
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+.text-center{
+    text-align: center;
+}
